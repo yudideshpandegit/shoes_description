@@ -10,6 +10,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Navbar Start Here -->
@@ -76,7 +92,7 @@
     <!-- Navbar End Here -->
     <div class="container-fluid elevar">
       <div class="row">
-        <div class="col-lg-6 col-sm-12 elevar__image " >
+        <div class="col-lg-6 col-sm-12 elevar__image">
           <div class="display__mobile elevar__title">
             <span class="elevar__hints">Our Flagship Sneaker</span>
             <h2>ELEVAR ARC RACER</h2>
@@ -258,7 +274,7 @@
           </div>
         </div>
         <div class="col-lg-6 elevar__title">
-          <div class="display__laptop">
+          <div class="display__laptop elevar__title">
             <span class="elevar__hints">Our Flagship Sneaker</span>
             <h2>ELEVAR ARC RACER</h2>
             <div class="col-sm-12 elevar__cost">
@@ -276,87 +292,153 @@
               >
             </div>
           </div>
-            <div class="elevar__content">
-              <p>
-                A high-performance shoe engineered specifically to adapt to your
-                needs
-              </p>
-              <p>
-                <span class="elevar__title__highlight">Choose Color:</span
-                ><span class="elevar__choose-color__title"
-                  >Cobalt Firey Carbon</span
-                >
-              </p>
-              <div class="elevar__choose-color">
-                <img
-                  class="elevar__choose-color__image"
-                  src="/images/choose_color/red.png"
-                  alt="no internet"
-                  onclick="onThumbnailClick(0)"
-                />
-                <img
-                  class="elevar__choose-color__image"
-                  src="/images/choose_color/blue.png"
-                  alt="no internet"
-                  onclick="onThumbnailClick(8)"
-                />
-                <img
-                  class="elevar__choose-color__image"
-                  src="/images/choose_color/black.png"
-                  alt="no internet"
-                  onclick="onThumbnailClick(16)"
-                />
-              </div>
-              <div class="elevar__content__size">
-                <p class="elevar__title__highlight">Choose Size (UK) :</p>
-                <u class="elevar__size__link">Size Guide</u>
-              </div>
-              <p>
-                <small class="elevar__size__title"
-                  >This UK Size 6 is equivalent to US 7 or EU 41</small
-                >
-              </p>
-              <div class="elevar__shoe__sizes">
-                <div
-                  class="elevar__shoe__description"
-                  onclick="onSizeIterator(6)"
-                >
-                  6
-                </div>
-                <div
-                  class="elevar__shoe__description"
-                  onclick="onSizeIterator(7)"
-                >
-                  7
-                </div>
-                <div
-                  class="elevar__shoe__description"
-                  onclick="onSizeIterator(8)"
-                >
-                  8
-                </div>
-                <div
-                  class="elevar__shoe__description"
-                  onclick="onSizeIterator(9)"
-                >
-                  9
-                </div>
-                <div
-                  class="elevar__shoe__description"
-                  onclick="onSizeIterator(10)"
-                >
-                  10
-                </div>
-              </div>
-
-              <button class="elevar__add-to-cart">ADD TO CART</button>
-              <span
-                ><u class="elevar__hints"
-                  >Check If We Deliver To Your Pincode</u
-                ></span
+          <div class="elevar__content">
+            <p>
+              A high-performance shoe engineered specifically to adapt to your
+              needs
+            </p>
+            <p>
+              <span class="elevar__title__highlight">Choose Color:</span
+              ><span class="elevar__choose-color__title"
+                >Cobalt Firey Carbon</span
+              >
+            </p>
+            <div class="elevar__choose-color">
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/red.png"
+                alt="no internet"
+                onclick="onThumbnailClick(0)"
+              />
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/blue.png"
+                alt="no internet"
+                onclick="onThumbnailClick(8)"
+              />
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/black.png"
+                alt="no internet"
+                onclick="onThumbnailClick(16)"
+              />
+            </div>
+            <div class="elevar__content__size">
+              <p class="elevar__title__highlight">Choose Size (UK) :</p>
+              <u
+                class="elevar__size__link"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                >Size Guide</u
               >
             </div>
+            <p>
+              <small class="elevar__size__title"
+                >This UK Size 6 is equivalent to US 7 or EU 41</small
+              >
+            </p>
+            <div class="elevar__shoe__sizes">
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(6)"
+              >
+                6
+              </div>
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(7)"
+              >
+                7
+              </div>
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(8)"
+              >
+                8
+              </div>
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(9)"
+              >
+                9
+              </div>
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(10)"
+              >
+                10
+              </div>
+            </div>
+
+            <button class="elevar__add-to-cart">ADD TO CART</button>
+            <span
+              ><u class="elevar__hints"
+                >Check If We Deliver To Your Pincode</u
+              ></span
+            >
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog elevar__modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="elevar__modal__title">FIND YOUR SIZE</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <h4 class="elevar__modal__title">Take A Quick Survey</h4>
+            </div>
+            <div class="row mt-4">
+              <p>Have You Ever Worn A Pair From Any Of These Brands?</p>
+            </div>
+            <div class="row">
+              <div class="custom-control custom-radio custom-control-inline col">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Nike</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline col">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Puma</label>
+              </div>    
+            </div>
+            <div class="row">
+              <div class="custom-control custom-radio custom-control-inline col">
+                <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline3">Adidas</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline col">
+                <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline4">Reebok</label>
+              </div>    
+            </div>
+ 
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>

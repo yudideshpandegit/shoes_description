@@ -8,7 +8,7 @@
 .container-fluid {
   margin: 0 auto;
   max-width: 90%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 20px;
 }
 
@@ -205,6 +205,33 @@
 
 .display__mobile {
   display: none !important;
+}
+
+/* Modal */
+
+.elevar__modal{
+  max-width:700px !important;
+  width: 80% !important;
+  height: auto;
+  margin: 10px auto;
+}
+
+.elevar__modal__title{
+  width: auto;
+  margin: 10px auto !important;
+}
+
+.modal-body{
+  margin: 0 10%;
+  text-align: center;
+}
+
+.close{
+  margin-left: 0 !important;
+}
+
+.custom-control-label{
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {
